@@ -15,10 +15,19 @@ public class StabbingBHVR : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.L) && canStab == true)
+        if (Input.GetKeyDown(KeyCode.L)/* && canStab == true*/)
         {
             animator.SetTrigger("Stabbing");
             canStab = false;
         }
     }
+
+	public void OnTriggerEnter(Collider other)
+	{
+        if (other.gameObject.tag == "Enemy")
+        {
+            canStab = true;
+            //other.gameObject.GetComponent<>();
+        }
+	}
 }
