@@ -1,0 +1,229 @@
+fileFormatVersion: 2
+guid: 365dfa2e06ff62a48b0deb4a60a01658
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: guard3_Body2
+    second: {fileID: 2100000, guid: 155c05104d71b934f9d29b643a11a30b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: guard3_Bottom1
+    second: {fileID: 2100000, guid: e5b8a6cf9300bf7478faca54da077141, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: guard3_Hair2
+    second: {fileID: 2100000, guid: e0add5454f6e93b4f8d36800cfdec200, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: guard3_Hat1
+    second: {fileID: 2100000, guid: 1427049d2c3c1ba4fb6803f2376ca213, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: guard3_Shoes2
+    second: {fileID: 2100000, guid: 83ea19354dbd9bc4e9acd3b5b7cf5238, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: guard3_Top1
+    second: {fileID: 2100000, guid: a5b728ba4f2a2e94c81541936c2ecd27, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: guard3_Body_diffuse
+    second: {fileID: 2800000, guid: 89227e82ea7f1cd48943917ac37e90f2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: guard3_Body_normal
+    second: {fileID: 2800000, guid: a8e5022961dd38346a92d57ce945291f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: guard3_Body_specular
+    second: {fileID: 2800000, guid: c52b5470c29732e489d9e2ceacaacaac, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: guard3_Bottom_diffuse
+    second: {fileID: 2800000, guid: ea7f3ca24dcf0ef4f951629d25b4d5dd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: guard3_Bottom_normal
+    second: {fileID: 2800000, guid: bb6ebd9ad52f2734bb6f938798a161f2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: guard3_Bottom_specular
+    second: {fileID: 2800000, guid: f151be0aa03928e4da47a7cf224bc693, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: guard3_Hair_diffuse
+    second: {fileID: 2800000, guid: 0900b71c2c1b89c47aaf21e099c74689, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: guard3_Hair_normal
+    second: {fileID: 2800000, guid: 486fdaec9cbdc0b40a7e936fe43aa8cd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: guard3_Hair_specular
+    second: {fileID: 2800000, guid: b5b5c97d0b3c04843bad7dd7cad1e053, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: guard3_Hat_diffuse
+    second: {fileID: 2800000, guid: 0798170ced80516449214e533be27d46, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: guard3_Hat_normal
+    second: {fileID: 2800000, guid: c0fdb8ff04632ec4181f57a1931a2f00, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: guard3_Hat_specular
+    second: {fileID: 2800000, guid: ffb5828f99818db42b12d160d5269a00, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: guard3_Shoes_diffuse
+    second: {fileID: 2800000, guid: 8a59db3e9c4d56341a2a51838d7a9017, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: guard3_Shoes_normal
+    second: {fileID: 2800000, guid: 7260ced50ae21ab478aa3b31157da418, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: guard3_Shoes_specular
+    second: {fileID: 2800000, guid: 8ded7280b9de9c946b1de7ef2f19a477, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: guard3_Top_diffuse
+    second: {fileID: 2800000, guid: 748449ca087218147a787152a425f20c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: guard3_Top_normal
+    second: {fileID: 2800000, guid: 62a23d6df1c519c42bd0507e2c23c90f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: guard3_Top_specular
+    second: {fileID: 2800000, guid: ba20d3aed28aa0f46b954b7d4938183e, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

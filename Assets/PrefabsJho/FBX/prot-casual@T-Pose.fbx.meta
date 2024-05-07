@@ -1,0 +1,289 @@
+fileFormatVersion: 2
+guid: d367e21e7f9b0db4ea1f1b7430e168ad
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prot_casual_Beard1
+    second: {fileID: 2100000, guid: 460c9f28f990981449e12ea1e247172d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prot_casual_Body2
+    second: {fileID: 2100000, guid: b423cdeaa04bd6749b6ff94607175f0a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prot_casual_Bottom1
+    second: {fileID: 2100000, guid: 59a3cd852516775439c3fdd8936c0351, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prot_casual_Eyewear2
+    second: {fileID: 2100000, guid: 22a696170a5d59d459b359b6e93aa34a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prot_casual_Glove1
+    second: {fileID: 2100000, guid: b8f0894734b9fca40ba13a2568d09f9d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prot_casual_Hair2
+    second: {fileID: 2100000, guid: 5c14f7ea6ac14404b895b0bad74658e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prot_casual_Moustache1
+    second: {fileID: 2100000, guid: 51cb0415e0675404ab7ebc8bc1d21789, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prot_casual_Shoes2
+    second: {fileID: 2100000, guid: eb3c9b04b30b674429d8cb913de3d23f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prot_casual_Top1
+    second: {fileID: 2100000, guid: dfe219e672c247c45921a15f8fcebceb, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Beard_diffuse
+    second: {fileID: 2800000, guid: f067e5193fb99ed4fb4dad018c7fd157, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Beard_normal
+    second: {fileID: 2800000, guid: 26c48f9aacf3af7418c05062f049482a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Beard_specular
+    second: {fileID: 2800000, guid: 2b4cdbf21d3ad2743be333b3f690c6e5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Body_diffuse
+    second: {fileID: 2800000, guid: 6cfed83dc1c45d94c8b7d89b1f268347, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Body_normal
+    second: {fileID: 2800000, guid: fcba7d5fd65700a44bf8f8396cad6a6e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Body_specular
+    second: {fileID: 2800000, guid: 90b162647b3216f4fbf9384f4f74b00e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Bottom_diffuse
+    second: {fileID: 2800000, guid: 41deee4d1f9e50e4faaeaa5a02611786, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Bottom_normal
+    second: {fileID: 2800000, guid: 99901f9736a139643897c1789c1e9dc7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Bottom_specular
+    second: {fileID: 2800000, guid: 60899b90cd4a77d4f8370f50f15ab0b0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Eyewear_diffuse
+    second: {fileID: 2800000, guid: 880cb47f170bf5040a0d65aa2302e1a3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Eyewear_normal
+    second: {fileID: 2800000, guid: 9f943c03c31189243aa2916e874d235a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Eyewear_specular
+    second: {fileID: 2800000, guid: 6cb63d3315dfbdf47b2a7a5566fd9761, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Glove_diffuse
+    second: {fileID: 2800000, guid: e26786ace328e4f4f8f32d9bfa4178f8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Glove_normal
+    second: {fileID: 2800000, guid: 240072557e83ad0488fcdc2ad7a9b0af, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Glove_specular
+    second: {fileID: 2800000, guid: 8f7d12be04e54b945b00a1ca8364e064, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Hair_diffuse
+    second: {fileID: 2800000, guid: f7b5cbe67fefc2c45ad22179ae4ff8e1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Hair_normal
+    second: {fileID: 2800000, guid: 3bc22949a6899824796618f033c09a8c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Hair_specular
+    second: {fileID: 2800000, guid: 9752d1eba4ddefa4f9b3b8a9cb07c141, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Moustache_diffuse
+    second: {fileID: 2800000, guid: eb3e2ae2d3e077744bcfb8485a756c80, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Moustache_normal
+    second: {fileID: 2800000, guid: bf019ff5415c80045ae6cc5455e3498c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Moustache_specular
+    second: {fileID: 2800000, guid: 6103160daec462c41919d954c2657735, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Shoes_diffuse
+    second: {fileID: 2800000, guid: 56474d03a7592bf4e88fa37e79c77be7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Shoes_normal
+    second: {fileID: 2800000, guid: 8d3cbe4ab0efbb242ad6275b2c769233, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Shoes_specular
+    second: {fileID: 2800000, guid: 0f1a77cf6bd6c24408b7da2a96bfcb94, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Top_diffuse
+    second: {fileID: 2800000, guid: 77c31d3a00c241648bd86e4ce3497924, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Top_normal
+    second: {fileID: 2800000, guid: 5d288dfae223eae47a79ba075ddc8431, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: prot-casual_Top_specular
+    second: {fileID: 2800000, guid: 30e519e2d99df0144b24ef9aa89f33be, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
