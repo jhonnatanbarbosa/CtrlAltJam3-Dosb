@@ -10,8 +10,21 @@ namespace JUTPS.Utilities
         {
             if (col.tag == "Player")
             {
-                SceneManager.LoadScene(DesiredLevelName);
+                SaveGame();
+                SceneManager.LoadScene(DesiredLevelName, LoadSceneMode.Single);
             }
+        }
+        public void SaveGame()
+        {
+            PlayerPrefs.SetString("Level", SceneManager.GetActiveScene().name);
+            PlayerPrefs.Save();
+            print("Game saved!");
+        }
+
+        public void LoadGame()
+        {
+            SceneManager.LoadScene(PlayerPrefs.GetString("Level"));
+            print("Game loaded!");
         }
     }
 }
