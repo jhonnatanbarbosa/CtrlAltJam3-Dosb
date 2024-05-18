@@ -10,8 +10,10 @@ public class EnemyDataTracker : MonoBehaviour, IDataPersistence
 {
 
     public GameObject GameObjectReference;
-    // private EnemyAttributes EnemyDataSO;
     public string id;
+    public float healthTemp;
+    public Vector3 transformTemp;
+    public Quaternion rotationTemp;
 
     [ContextMenu("Generate UID")]
     private void generateUID()
@@ -21,7 +23,8 @@ public class EnemyDataTracker : MonoBehaviour, IDataPersistence
 
     public void Awake()
     {
-        if(GameObjectReference == null) {
+        if (GameObjectReference == null)
+        {
             GameObjectReference = gameObject;
         }
 
@@ -33,26 +36,39 @@ public class EnemyDataTracker : MonoBehaviour, IDataPersistence
 
     public void LoadData(GameData data)
     {
-        // data.EnemyData.TryGetValue(id, out EnemyDataSO);
-        // if (EnemyDataSO != null)
-        // {
-        //     GameObjectReference.GetComponent<JUHealth>().Health = EnemyDataSO.healthF;
-        //     GameObjectReference.transform.position = EnemyDataSO.transformV;
-        //     GameObjectReference.transform.rotation = EnemyDataSO.rotationV;
-        //     GameObjectReference.GetComponent<JUInventory>().AllItems = EnemyDataSO.itemsArray;
-        // }
+        data.EnemyHealthDic.TryGetValue(id, out healthTemp);
+        if (healthTemp <= 0)
+        {
+            GameObjectReference.GetComponent<JUHealth>().IsDead = true;
+        }
+        data.EnemyTransformDic.TryGetValue(id, out transformTemp);
+        data.EnemyRotationDic.TryGetValue(id, out rotationTemp);
+        if (transformTemp != null)
+        {
+            GameObjectReference.transform.position = transformTemp;
+        }
+        if (rotationTemp != null)
+        {
+            GameObjectReference.transform.rotation = rotationTemp;
+        }
     }
 
     public void SaveData(ref GameData data)
     {
-        // if (data.EnemyData.ContainsKey(id))
-        // {
-        //     data.EnemyData.Remove(id);
-        // }
-        // EnemyDataSO.healthF = GameObjectReference.GetComponent<JUHealth>().Health;
-        // EnemyDataSO.transformV = GameObjectReference.transform.position;
-        // EnemyDataSO.rotationV = GameObjectReference.transform.rotation;
-        // // EnemyDataSO.itemsArray = GameObjectReference.GetComponent<JUInventory>().AllItems;
-        // data.EnemyData.Add(id, EnemyDataSO);
+        if (data.EnemyHealthDic.ContainsKey(id))
+        {
+            data.EnemyHealthDic.Remove(id);
+        }
+        data.EnemyHealthDic.Add(id, GameObjectReference.GetComponent<JUHealth>().Health);
+        if (data.EnemyTransformDic.ContainsKey(id))
+        {
+            data.EnemyTransformDic.Remove(id);
+        }
+        data.EnemyTransformDic.Add(id, GameObjectReference.transform.position);
+        if (data.EnemyRotationDic.ContainsKey(id))
+        {
+            data.EnemyRotationDic.Remove(id);
+        }
+        data.EnemyRotationDic.Add(id, GameObjectReference.transform.rotation);
     }
 }

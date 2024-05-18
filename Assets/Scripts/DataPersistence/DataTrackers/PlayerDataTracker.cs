@@ -38,8 +38,6 @@ public class PlayerDataTracker : MonoBehaviour, IDataPersistence
 
     public void SaveData(ref GameData data)
     {
-        Debug.Log("data trans" + data.transformV);
-        Debug.Log("ref" + GameObjectReference.transform.position);
         data.transformV = GameObjectReference.transform.position;
         data.quaternionV = GameObjectReference.transform.rotation;
         data.health = GameObjectReference.GetComponent<JUHealth>().Health;
