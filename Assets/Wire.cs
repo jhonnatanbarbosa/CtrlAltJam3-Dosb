@@ -8,6 +8,7 @@ public class Wire : MonoBehaviour
     public GameObject lightOn;
     Vector3 startPoint;
     Vector3 startPosition;
+    public Camera _cam;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,7 @@ public class Wire : MonoBehaviour
     private void OnMouseDrag()
     {
         // mouse position to world point
-        Vector3 newPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 newPosition = /*Camera.main.ScreenToWorldPoint(Input.mousePosition);*/ _cam.ScreenToWorldPoint(Input.mousePosition);
         newPosition.z = 0;
 
         // check for nearby connection points

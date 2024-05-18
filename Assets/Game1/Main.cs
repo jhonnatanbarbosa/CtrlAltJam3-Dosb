@@ -8,24 +8,36 @@ public class Main : MonoBehaviour
     static public Main Instance;
 
     public int switchCount;
-    //public GameObject winText;
+    public GameObject winText;
     private int onCount = 0;
-
-    [SerializeField] JUTPS.Utilities.SimpleLevelTransition levelScript;
+    public GameObject _tudo;
+    public GameObject _mG;
 
     private void Awake()
     {
         Instance = this;
-        Cursor.lockState = CursorLockMode.None;
     }
     public void SwitchChange(int points) {
         onCount = onCount + points;
         if (onCount == switchCount)
-        {
-            //winText.SetActive(true);
-            levelScript.LoadGame();
-        }
+		{
+			//winText.SetActive(true);
+			EndMinigame();
+		}
+	}
+
+	public void EndMinigame()
+	{
+		_tudo.SetActive(true);
+		_mG.SetActive(false);
+	}
+    public void StartMinigame()
+    {
+        Cursor.lockState = CursorLockMode.Confined;
+        _tudo.SetActive(false);
+        _mG.SetActive(true);
     }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.R)) {

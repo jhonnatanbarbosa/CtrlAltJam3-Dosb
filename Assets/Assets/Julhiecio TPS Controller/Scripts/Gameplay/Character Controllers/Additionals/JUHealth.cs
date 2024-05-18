@@ -25,6 +25,8 @@ namespace JUTPS
         [JUHeader("Stats")]
         public bool IsDead;
 
+        EnemyCount enemyCount;
+
         void Start()
         {
             LimitHealth();
@@ -66,6 +68,7 @@ namespace JUTPS
                 foreach (Damager dmg in GetComponentsInChildren<Damager>()) dmg.gameObject.SetActive(false);
 
                 OnDeath.Invoke();
+                enemyCount.LifeCheck();
             }
 
             if (Health > 0) IsDead = false;

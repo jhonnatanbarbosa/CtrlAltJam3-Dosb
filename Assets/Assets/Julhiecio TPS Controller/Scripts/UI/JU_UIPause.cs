@@ -22,7 +22,7 @@ namespace JUTPS.UI
             /// <summary>
             /// The cursor is invisible.
             /// </summary>
-            Hide
+            //Hide
         }
 
         /// <summary>
@@ -157,9 +157,9 @@ namespace JUTPS.UI
                 case CursorVisibility.Show:
                     Cursor.visible = true;
                     break;
-                case CursorVisibility.Hide:
-                    Cursor.visible = false;
-                    break;
+                //case CursorVisibility.Hide:
+                //    Cursor.visible = false;
+                //    break;
                 default:
                     break;
             }
@@ -169,10 +169,10 @@ namespace JUTPS.UI
                 case CursorControl.Free:
                     Cursor.lockState = CursorLockMode.None;
                     break;
-                case CursorControl.Lock:
-                    Cursor.lockState = CursorLockMode.Locked;
-                    break;
-                default:
+				case CursorControl.Lock:
+					Cursor.lockState = CursorLockMode.Locked;
+					break;
+				default:
                     break;
             }
         }

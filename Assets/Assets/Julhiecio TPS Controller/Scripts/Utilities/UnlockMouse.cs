@@ -16,8 +16,15 @@ namespace JUTPS.Utilities
             if (UnlockOnAwake) Unlock(UnlockCursor, UnhideCursor);
             if (LockOnAwake) Lock (!UnlockCursor, !UnhideCursor);
         }
+		private void Update()
+		{
+            if (Input.GetKeyDown(KeyCode.K))
+            {
+                Unlock(true, true);
+            }
+		}
 
-        public static void Unlock(bool UnlockCursor, bool UnhideCursor)
+		public static void Unlock(bool UnlockCursor, bool UnhideCursor)
         {
             if (UnlockCursor) Cursor.lockState = CursorLockMode.None;
 
