@@ -124,6 +124,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!20 &1293630009 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 4618762771861175638, guid: d8d49e7d32e356f4191923ab2ef122cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 5757550946428392849}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5757550946428392849
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -132,6 +138,36 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 99554991829536606, guid: d8d49e7d32e356f4191923ab2ef122cc,
+        type: 3}
+      propertyPath: _cam
+      value: 
+      objectReference: {fileID: 1293630009}
+    - target: {fileID: 1231759746006948703, guid: d8d49e7d32e356f4191923ab2ef122cc,
+        type: 3}
+      propertyPath: _cam
+      value: 
+      objectReference: {fileID: 1293630009}
+    - target: {fileID: 1970512960186977758, guid: d8d49e7d32e356f4191923ab2ef122cc,
+        type: 3}
+      propertyPath: _cam
+      value: 
+      objectReference: {fileID: 1293630009}
+    - target: {fileID: 2143777527484099797, guid: d8d49e7d32e356f4191923ab2ef122cc,
+        type: 3}
+      propertyPath: _cam
+      value: 
+      objectReference: {fileID: 1293630009}
+    - target: {fileID: 2609045279281534399, guid: d8d49e7d32e356f4191923ab2ef122cc,
+        type: 3}
+      propertyPath: _cam
+      value: 
+      objectReference: {fileID: 1293630009}
+    - target: {fileID: 4111909297075922957, guid: d8d49e7d32e356f4191923ab2ef122cc,
+        type: 3}
+      propertyPath: _cam
+      value: 
+      objectReference: {fileID: 1293630009}
     - target: {fileID: 7303788418108910969, guid: d8d49e7d32e356f4191923ab2ef122cc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -182,6 +218,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7550912088719522095, guid: d8d49e7d32e356f4191923ab2ef122cc,
+        type: 3}
+      propertyPath: _cam
+      value: 
+      objectReference: {fileID: 1293630009}
+    - target: {fileID: 8033286268624912178, guid: d8d49e7d32e356f4191923ab2ef122cc,
+        type: 3}
+      propertyPath: _cam
+      value: 
+      objectReference: {fileID: 1293630009}
     - target: {fileID: 8278694970579390242, guid: d8d49e7d32e356f4191923ab2ef122cc,
         type: 3}
       propertyPath: m_Name

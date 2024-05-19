@@ -658,6 +658,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   switchCount: 4
   winText: {fileID: 2829835638042960306}
+  _tudo: {fileID: 0}
+  _mG: {fileID: 0}
 --- !u!1 &8278694970579390242
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,6 +843,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8465893394239330388, guid: 1c572f6d47e1ebd4f8868aafe34b7b7a,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

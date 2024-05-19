@@ -17,10 +17,10 @@ namespace Michsky.UI.Heat
         // Settings
         [SerializeField] private bool setTimeScale = true;
         [Range(0, 1)] public float inputBlockDuration = 0.2f;
-        public CursorLockMode menuCursorState = CursorLockMode.None;
-        public CursorLockMode gameCursorState = CursorLockMode.Locked;
-        public CursorVisibility menuCursorVisibility = CursorVisibility.Visible;
-        public CursorVisibility gameCursorVisibility = CursorVisibility.Default;
+        //public CursorLockMode menuCursorState = CursorLockMode.None;
+        //public CursorLockMode gameCursorState = CursorLockMode.Locked;
+        //public CursorVisibility menuCursorVisibility = CursorVisibility.Visible;
+        //public CursorVisibility gameCursorVisibility = CursorVisibility.Default;
         [SerializeField] private InputAction hotkey;
 
         // Events
@@ -32,7 +32,7 @@ namespace Michsky.UI.Heat
         bool allowClosing = true;
         float disableAfter = 0.6f;
 
-        public enum CursorVisibility { Default, Invisible, Visible }
+        //public enum CursorVisibility { Default, Invisible, Visible }
 
         void Awake()
         {
@@ -87,10 +87,10 @@ namespace Michsky.UI.Heat
 
             FadeInBackground();
 
-            Cursor.lockState = menuCursorState;
+            //Cursor.lockState = menuCursorState;
 
-            if (menuCursorVisibility == CursorVisibility.Visible) { Cursor.visible = true; }
-            else if (menuCursorVisibility != CursorVisibility.Default) { Cursor.visible = false; }
+            //if (menuCursorVisibility == CursorVisibility.Visible) { Cursor.visible = true; }
+            //else if (menuCursorVisibility != CursorVisibility.Default) { Cursor.visible = false; }
 
             if (continueButton != null && Gamepad.current != null)
             {
@@ -108,15 +108,15 @@ namespace Michsky.UI.Heat
             StopCoroutine("DisablePauseCanvas");
             StartCoroutine("DisablePauseCanvas");
 
-            if (gameCursorVisibility == CursorVisibility.Visible) { Cursor.visible = true; }
-            else if (gameCursorVisibility != CursorVisibility.Default) { Cursor.visible = false; }
+            //if (gameCursorVisibility == CursorVisibility.Visible) { Cursor.visible = true; }
+            //else if (gameCursorVisibility != CursorVisibility.Default) { Cursor.visible = false; }
 
             isOn = false;
             onClose.Invoke();
 
             FadeOutBackground();
 
-            Cursor.lockState = gameCursorState;
+            //Cursor.lockState = gameCursorState;
         }
 
         public void FadeInBackground()
