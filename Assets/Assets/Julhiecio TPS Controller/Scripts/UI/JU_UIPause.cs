@@ -112,7 +112,7 @@ namespace JUTPS.UI
 
         private void Awake()
         {
-            Setup();
+            Setup();           
         }
 
         private void OnDestroy()
@@ -160,8 +160,8 @@ namespace JUTPS.UI
                 //case CursorVisibility.Hide:
                 //    Cursor.visible = false;
                 //    break;
-                default:
-                    break;
+                //default:
+                    //break;
             }
 
             switch (control)
@@ -172,8 +172,8 @@ namespace JUTPS.UI
 				case CursorControl.Lock:
 					Cursor.lockState = CursorLockMode.Locked;
 					break;
-				default:
-                    break;
+				//default:
+                    //break;
             }
         }
 

@@ -8,7 +8,7 @@ public class MatrixManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _miniScript.EndMinigame();
+        //_miniScript.EndMinigame();
     }
 
     // Update is called once per frame

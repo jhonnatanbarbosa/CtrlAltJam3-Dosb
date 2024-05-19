@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class Main : MonoBehaviour
@@ -16,6 +17,7 @@ public class Main : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        
     }
     public void SwitchChange(int points) {
         onCount = onCount + points;
@@ -30,10 +32,13 @@ public class Main : MonoBehaviour
 	{
 		_tudo.SetActive(true);
 		_mG.SetActive(false);
-	}
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
     public void StartMinigame()
     {
-        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         _tudo.SetActive(false);
         _mG.SetActive(true);
     }

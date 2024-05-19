@@ -20,7 +20,7 @@ public class Wire : MonoBehaviour
     {
         // mouse position to world point
         Vector3 newPosition = /*Camera.main.ScreenToWorldPoint(Input.mousePosition);*/ _cam.ScreenToWorldPoint(Input.mousePosition);
-        newPosition.z = 0;
+        newPosition.z = startPoint.z;
 
         // check for nearby connection points
         Collider2D[] colliders = Physics2D.OverlapCircleAll(newPosition, .2f);
