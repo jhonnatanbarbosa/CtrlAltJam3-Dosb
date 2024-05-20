@@ -13,6 +13,7 @@ public class Main : MonoBehaviour
     private int onCount = 0;
     public GameObject _tudo;
     public GameObject _mG;
+    public GameObject infoIcon;
 
     private void Awake()
     {
@@ -32,21 +33,28 @@ public class Main : MonoBehaviour
 	{
 		_tudo.SetActive(true);
 		_mG.SetActive(false);
+        infoIcon.SetActive(true);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
     }
     public void StartMinigame()
-    {
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-        _tudo.SetActive(false);
-        _mG.SetActive(true);
-    }
+	{
+		Cursor.lockState = CursorLockMode.None;
+		Cursor.visible = true;
+		_tudo.SetActive(false);
+		_mG.SetActive(true);
+	}
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.R)) {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
-    }
+	void Start()
+	{
+		infoIcon.SetActive(false);
+	}
+
+	//private void Update()
+ //   {
+ //       if (Input.GetKeyDown(KeyCode.R)) {
+ //           SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+ //       }
+ //   }
 }
