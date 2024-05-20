@@ -6,7 +6,7 @@ using UnityEngine.Events;
 namespace JUTPS.AI
 {
     [AddComponentMenu("JU TPS/AI/Patrol AI")]
-    public class PatrolAI : JUCharacterArtificialInteligenceBrain
+    public class PatrolAI : JUCharacterArtificialInteligenceBrain, IHear
     {
         private CharacterBrain.JUCharacterBrain targetJuCharacter;
 
@@ -94,8 +94,17 @@ namespace JUTPS.AI
             else
             {
                 Debug.DrawLine(fieldViewPosition, smoothedTargetPosition, Color.red);
-
-                if (WaypointPath != null)
+                if (TemporaryWaypoint != Vector3.zero)
+                {
+                    bool investigating = true;
+                    float returnDistance = 1.5f;
+                    GoToPosition(TemporaryWaypoint, DistanceToFinishOnePoint, investigating);
+                    JUPathFinder.VisualizePath(new Vector3[]{TemporaryWaypoint, gameObject.transform.position});
+                    if (Vector2.Distance(TemporaryWaypoint, gameObject.transform.position) < returnDistance) {
+                        TemporaryWaypoint = Vector3.zero;
+                    }
+                }
+                else if (WaypointPath != null)
                 {
                     //Patrol Mode
                     if (character.FiringMode)
@@ -212,6 +221,7 @@ namespace JUTPS.AI
                 _OnSeeTarget.Invoke();
                 SawATarget = true;
                 StoppedSeeingTarget = false;
+                TemporaryWaypoint = Vector3.zero;
             }
             if (currentTarget == null && StoppedSeeingTarget == false && SawATarget == true)
             {
@@ -369,6 +379,14 @@ namespace JUTPS.AI
             isAttacking = false;
             currentMaxTimeToAttack = 0;
             currentAttackDuration = 0;
+        }
+
+        public void RespondToSound(Sound sound)
+        {
+            if(isAttacking) {
+                return;
+            }
+            TemporaryWaypoint = sound.pos;
         }
 
 #if UNITY_EDITOR

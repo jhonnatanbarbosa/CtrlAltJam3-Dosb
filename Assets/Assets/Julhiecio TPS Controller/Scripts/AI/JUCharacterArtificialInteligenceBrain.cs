@@ -135,6 +135,7 @@ namespace JUTPS.AI
         [Header("Destination Settings")]
         public Vector3 Destination;
         public WaypointPath WaypointPath;
+        public Vector3 TemporaryWaypoint = Vector3.zero;
         private float RecalculatePathRefreshRate = 1;
 
         [Header("Character Path Locomotion Settings")]
