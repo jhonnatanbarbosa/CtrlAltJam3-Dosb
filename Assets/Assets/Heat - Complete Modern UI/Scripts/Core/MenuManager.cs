@@ -13,9 +13,15 @@ namespace Michsky.UI.Heat
         [SerializeField] private GameObject mainContent;
         [SerializeField] private ImageFading initPanel;
 
+        [SerializeField] private AudioClip part1;
+        [SerializeField] private AudioClip part2;
+        [SerializeField] private AudioSource audioSource;
+
         // Helpers
         float splashInTime;
         float splashOutTime;
+
+        
 
         void Awake()
         {
@@ -27,8 +33,40 @@ namespace Michsky.UI.Heat
 
         void Start()
         {
+            audioSource = GetComponent<AudioSource>();
+
+            if (audioSource == null)
+            {
+            // If there is no AudioSource component, add one
+            audioSource = gameObject.AddComponent<AudioSource>();
+            }
+
+             PlayFirstClip();   
+
             StartCoroutine("StartInitialize");
         }
+
+        void PlayFirstClip()
+    {
+        if (part1 != null)
+        {
+            audioSource.clip = part1;
+            audioSource.loop = false; // Ensure the first clip does not loop
+            audioSource.Play();
+            Invoke("PlaySecondClip", part1.length); // Schedule the second clip to play after the first one ends
+        }
+    }
+
+    void PlaySecondClip()
+    {
+        if (part2 != null)
+        {
+            audioSource.clip = part2;
+            audioSource.loop = true; // Ensure the second clip loops
+            audioSource.Play();
+        }
+    }
+
 
         public void DisableSplashScreen() 
         {
@@ -37,6 +75,7 @@ namespace Michsky.UI.Heat
 
             splashScreen.enabled = true;
             splashScreen.Play("Out");
+            
         }
 
         void Initialize()
